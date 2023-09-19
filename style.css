@@ -1,23 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #102C57;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-.background{
+/* Password Protaction File */
+
+.pin_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin_page_heading {
+    font-size: 22px;
+}
+
+.pin_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    width: 65% !important;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #102C57;
+}
+
+input[type="password"]:hover {
+    border: 2px solid #102C57;
+    outline: none;
+    box-shadow: none;
+}
+
+#submitButton {
+    width: 30%;
+    padding: 10px 20px;
+
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: #102C57;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #102C57;
+}
+
+/* Password Protaction File */
+
+.background {
     width: 100%;
     height: 90vh;
     background-color: #ffffff;
     padding: 20px;
 }
 
-.border{
+.border {
     width: 100%;
     height: 100%;
     border: 1.5px solid #102C57;
@@ -25,32 +82,32 @@ html,body{
     padding: 20px;
 }
 
-.border h1{
+.border h1 {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     color: #102C57;
 }
 
-.top{
+.top {
     text-align: center;
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-.border .contact{
+.border .contact {
     margin: 30px 0px;
 }
 
-.border .contact h2{
+.border .contact h2 {
     font-size: 25px;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     color: #102C57;
 }
 
-.border .contact .content a{
+.border .contact .content a {
     text-decoration: none;
     color: #102C57;
     font-size: 18px;
@@ -58,17 +115,18 @@ html,body{
     font-weight: 500;
 }
 
-.border .contact .content{
+.border .contact .content {
     margin: 15px 0px;
     display: flex;
     align-items: center;
 }
 
-.border .contact .content .circle{
+.border .contact .content .circle {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #102C57;;
+    border: 1px solid #102C57;
+    ;
     font-size: 20px;
 
     display: flex;
@@ -76,16 +134,16 @@ html,body{
     justify-content: center;
 }
 
-.border .contact .content .social{
+.border .contact .content .social {
     width: 40px;
     height: 40px;
     border-radius: 5px;
 }
 
-.border .contact .content .social i{
+.border .contact .content .social i {
     font-size: 25px !important;
 }
 
-hr{
+hr {
     opacity: .3;
 }

@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Verify your Pin!</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
-    <div class="background">
-        <div class="border pin_page">
+    <div class="background pin_page_bg">
+        <div class="inside_border">
             <div>
-                <h1 class="pin_page_heading">Enter PIN to Access Contacts</h1>
+                <h1 class="primary_heading">Enter PIN to Access Contacts</h1>
                 <div class="pin_form">
                     <input class="pin_box" type="password" id="pinInput" placeholder="Enter 6 Digit PIN">
-                    <button id="submitButton">Submit</button>
+                    <button class="nav_button" id="submitButton">Submit</button>
                 </div>
             </div>
         </div>

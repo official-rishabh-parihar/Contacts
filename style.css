@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #102C57;
 }
 
 html,
@@ -11,185 +10,294 @@ body {
     height: 100%;
 }
 
+/* Font */
+@font-face {
+    font-family: SatoshiMedium;
+    src: url('./assets/fonts/Satoshi-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SatoshiBold;
+    src: url('./assets/fonts/Satoshi-Bold.otf') format('opentype');
+}
+/* Font */
+
 a {
     text-decoration: none;
 }
 
-
-.pin_page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+i{
+    color: #ffffff;
 }
 
-.front_page_section {
+section {
+    margin: 0px 30px;
+}
+
+.common_section {
+    margin: 100px 30px;
+}
+
+.devider .line {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 1px;
+    background-color: white;
 }
 
-.front_page_section h1,
-.front_page_section p {
-    margin-top: 10px;
+.primary_heading {
+    color: #FFF;
+    font-family: Syne;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
 }
 
-.front_page_section .profile_pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-}
-
-.front_page_bottom_section a {
-    width: 100%;
-}
-
-.front_page_section .lg_button {
-    width: 100% !important;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-
-    background-color: #102C57;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.lg_button i {
-    color: white !important;
-}
-
-.pin_page_heading {
-    font-size: 22px;
-    text-align: left !important;
-}
-
-.pin_form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.paragraph {
+    color: #A0A0A0;
+    font-family: SatoshiMedium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
     margin-top: 20px;
-}
-
-input[type="password"] {
-    width: 65% !important;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 5px;
-    border: 1px solid #102C57;
-}
-
-input[type="password"]:hover {
-    border: 2px solid #102C57;
-    outline: none;
-    box-shadow: none;
-}
-
-#submitButton {
-    width: 30%;
-    padding: 10px 20px;
-
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-
-    background-color: #102C57;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #102C57;
 }
 
 .background {
     width: 100%;
-    height: 90vh;
-    background-color: #ffffff;
-    padding: 20px;
+    min-height: 100vh !important;
+    background-color: #121212;
+    padding: 30px;
 }
 
-.border {
+.inside_border {
     width: 100%;
     height: 100%;
-    border: 1.5px solid #102C57;
-    border-radius: 20px;
-    padding: 20px;
+    border: 1px solid white;
 }
 
-.border h1 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    color: #102C57;
-}
+.nav_button {
+    width: 100%;
+    display: inline-flex;
+    padding: 14px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
-.top {
-    text-align: center;
+    color: #121212 !important;
+    font-family: Syne;
     font-size: 12px;
-    margin-top: 5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.nav_button a, .nav_button i {
+    color: #121212 !important;
+}
+
+/* Home */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .left {
+    width: 50%;
+    height: auto;
+    /* background-color: aquamarine; */
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0px;
+}
+
+.home .left .contact_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .left .contact_details .contact_details_left .sm_heading {
+    color: #FFF;
+    font-family: SatoshiMedium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.home .left .contact_details .contact_details_left .sm_heading a {
+    color: #FFF;
+    font-weight: 400;
+    text-decoration: none !important;
+}
+
+.home .left .contact_details .contact_details_left .sm_email {
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
-.border .contact {
-    margin: 25px 0px;
-}
-
-.border .contact h2 {
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    color: #102C57;
-}
-
-.border .contact .content a {
-    text-decoration: none;
-    color: #102C57;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-.border .contact .content,
-.content {
-    margin: 15px 0px;
+.home .left .contact_details .contact_details_left .social_links {
     display: flex;
     align-items: center;
 }
 
-.border .contact .content .circle,
-.content .circle {
-    width: 30px;
-    height: 30px;
+.home .left .contact_details .contact_details_left .social_links .circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
     border-radius: 50%;
-    border: 1px solid #102C57;
-    font-size: 20px;
+    margin-right: 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.border .contact .content .social,
-.content .social {
-    width: 40px;
+.home .left .contact_details .contact_details_right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.home .right {
+    width: 50%;
+    height: auto;
+    /* background-color: bisque; */
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.home .right img {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+/* Home */
+
+/*Password Protected Page */
+
+.pin_page_bg{
+    height: 100vh !important;
+}
+
+.pin_page_bg .inside_border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin_page_bg .primary_heading{
+    font-size: 20px !important;
+}
+
+.pin_page_bg .pin_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pin_page_bg .pin_form .pin_box{
+    width: 74%;
     height: 40px;
-    border-radius: 5px;
+    padding: 0px 10px !important;
+
+    color: #A0A0A0 !important;
+    font-family: Syne;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.border .contact .content .social i,
-.content .social i {
-    font-size: 25px !important;
+.pin_page_bg .pin_form .nav_button{
+    width: 24% !important;
+    height: 40px !important;
+    padding: 0px 10px !important;
+    font-weight: 600;
 }
 
-hr {
-    opacity: .3;
+/*Password Protected Page */
+
+/*Family Contact Details */
+
+.family_contacts{
+    min-height: 100vh;
 }
+
+.family_contacts .primary_heading{
+    margin: 0 !important;
+}
+
+.family_contacts .sm_heading{
+    color: #A0A0A0;
+    font-family: SatoshiMedium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: auto;
+    text-align: center;
+}
+
+.family_contacts .contact{
+
+}
+
+.family_contacts .contact .md_heading{
+    color: #ffffff;
+    font-family: Syne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: auto;
+}
+
+.family_contacts .contact .content{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.family_contacts .contact .content a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: SatoshiMedium;
+    font-weight: 400;
+}
+
+.family_contacts .contact .social_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.family_contacts .contact .social_links .circle, .content .circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.family_contacts .contact .social_links .circle img {
+    width: 16px;
+}
+
+/*Family Contact Details */
